@@ -85,7 +85,7 @@ export default function Login() {
                                 <Link to='' className="text-sm font-medium text-neutral-600 hover:underline dark:text-neutral-500">Forgot password?</Link>
                             </div>
                             {
-                                loader ? <button className=" w-full btn btn-neutral text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center "> <span className="loading loading-spinner"></span> Verifying Credientials ! </button> : <button type="submit" className="w-full btn btn-neutral text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Sign In</button>
+                                loader ? <button className=" w-full btn btn-neutral text-white  font-medium rounded-lg text-sm px-5 py-2.5 text-center "> <span className="loading loading-spinner"></span> Verifying Credientials ! </button> : <button type="submit" className="w-full bg-blue-400 hover:bg-blue-500 text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign In</button>
                             }
                             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                 Don’t have an account yet? <Link to="/register-account" className="font-medium text-neutral-600 hover:underline dark:text-neutral-500">Sign up</Link>
