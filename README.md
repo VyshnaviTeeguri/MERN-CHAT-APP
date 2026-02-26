@@ -41,9 +41,10 @@ Authentication: JWT (JSON Web Token)
 
 File Uploads: Multer / Cloudinary (if using cloud storage)
 
-Screenshots
+Screenshots:
 
-(Add screenshots of the pages here: Login, Signup, Chat, Chat Room, Media Upload, etc.)
+<img width="1870" height="885" alt="image" src="https://github.com/user-attachments/assets/36805b2b-1167-4720-819d-d09d6ea4e3db" />
+
 
 Setup Instructions (Local Development)
 Prerequisites:
