@@ -369,7 +369,7 @@ export default function Chat() {
                                     isMulti
                                     name="colors"
                                     options={selectUsers}
-                                    className=" w-full bg-slate-900 text-white mb-2"
+                                    className=" w-full bg-slate-900 text-black mb-2"
                                     classNamePrefix="Select members"
                                 />
                                 <button type='submit' className='btn btn-wide btn-primary'>Create Group</button>
@@ -439,7 +439,7 @@ export default function Chat() {
 
             </div>
             <ToastContainer />
-            <p className={`fixed text-sm lg:text-base bottom-2 lg:bottom-5 text-center  ${theme === 'on' ? 'text-black' : "text-white"} `}>Created By Abdullah Moiz</p>
+            <p className={`fixed text-sm lg:text-base bottom-2 lg:bottom-5 text-center  ${theme === 'on' ? 'text-black' : "text-white"} `}>Created By Vyshnavi Teeguri</p>
         </div>
     )
 }

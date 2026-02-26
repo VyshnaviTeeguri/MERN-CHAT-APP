@@ -1,99 +1,105 @@
-###### Chat Application Using MERN STACK & SocketIO
+Real-Time MERN Chat Application
 
-- don't forget to leave a star ! :)
+Overview
 
-## Authors
+This is a Real-Time Chat Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with WebSockets (Socket.io) for real-time communication. The app allows users to interact in private chats or group chat rooms, send messages and media files, and store chat history in the database for persistence.
 
-- [Abdullah Moiz](https://www.github.com/Abdullah-moiz)
-- [YassineAzedine](https://github.com/YassineAzedine)
+This project is built as part of a SalesWinnr Technology Solutions Pvt. Ltd. assignment, with a focus on real-time chat applications like WhatsApp, Slack, and Teams.
 
-## Features
-- Login ✔
-- Register ✔
-- Private (1 v 1 Chat) ✔
-- Detect Typing and display user name ✔
-- group Chat ✔
-- Add people to group ✔
-- Remove people from group ✔
-- online user Detection ✔
-- Send Emoji ✔
-- Dark & Light Mode ✔
+Features
+Must-Have Features:
 
+Responsive Web Pages: Works across desktop, tablet, and mobile screens.
 
+Authentication: Users can Sign Up and Sign In securely.
 
-#### Technologies
+Real-Time Chat: Messages are delivered instantly using WebSockets.
 
-- React + vite
-- Node js
-- mongoDB
-- socket.io
-- redux toolkit
+Persistent Messages: Chat history is saved in MongoDB.
 
-  
-#### Environment Variables
+Additional Features:
 
-To run this project, you will need to add the following environment variables to your .env file
+Multiple Chat Rooms / Private Chats – Users can create private or group conversations.
 
-`ConnectionUrl` = Your MongoDB Connection String
-`JWT_SECREAT` = your secure secreat key
+Media Sharing – Send images and files in chats.
 
-#### Screenshots
+Typing Indicators – Shows when someone is typing.
 
-##### Login
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/9e700bc2-cf2b-477a-a744-7fe3273bc13e)
+User Profiles – Users can set display names and profile pictures.
 
+Tech Stack
 
-##### Register
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/8425d01c-06f1-4cbb-a254-8f7813c99dfb)
+Frontend: React.js, Chakra UI / CSS (responsive design)
 
+Backend: Node.js, Express.js
 
-##### Main Page
+Database: MongoDB (Atlas / Local)
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/b91ab8e3-12ae-45ba-8d0f-06a286f31278)
+Real-Time Communication: Socket.io
 
+Authentication: JWT (JSON Web Token)
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/08eb8c71-35ae-4845-b57b-82a7b3d9e91c)
+File Uploads: Multer / Cloudinary (if using cloud storage)
 
+Screenshots
 
-##### Groups
+(Add screenshots of the pages here: Login, Signup, Chat, Chat Room, Media Upload, etc.)
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/7bc9ae24-aa77-4602-a4e0-755356a86c03)
+Setup Instructions (Local Development)
+Prerequisites:
 
+Node.js v22.x
 
-##### Create Groups
+npm v9.x or higher
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/cb194d66-0c33-4114-905f-ec34caa62ade)
+MongoDB (local or Atlas cluster)
 
+Backend Setup:
 
-##### New Group Added
+Open terminal in the server folder.
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/bff6d502-2486-4577-863a-ada3872fa748)
+Install dependencies:
 
+npm install
 
-##### Admin Can Delete group
+Create a .env file with the following variables:
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/07b45b9d-9c95-4dcb-91eb-ca51f2d5f08b)
+PORT=5000
+MONGO_URI=<Your MongoDB Connection String>
+JWT_SECRET=<Your JWT Secret>
 
+Start the server:
 
-##### Delete Messages from ME
+npm run dev
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/a4994dc0-dc74-4946-bcb5-84bd5f675d1e)
+Server will run on http://localhost:5000.
 
+Frontend Setup:
 
-##### Typing Detection in both Group and One - One Chat
+Open terminal in the client folder.
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/2facbf19-e6b3-4712-984a-3439d08a471c)
+Install dependencies:
 
+npm install
 
-##### Search Groups / Search Users
+Start the React app:
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/b9ffb7f7-70d1-4fa8-b3f3-a6b945145b87)
+npm start
 
+App will run on http://localhost:3000.
 
+How to Use:
 
-##### Online User Detection
+Sign up with a new account or login with existing credentials.
 
-![image](https://github.com/Abdullah-moiz/mern-chat-app/assets/90745903/e5b6c919-9f6d-45f2-b0aa-de912eb52a41)
+Create a chat room or start a private conversation.
 
+Send text messages, images, or files.
 
-  
+Chat history is saved and can be accessed on login.
+
+Folder Structure
+client/        # React frontend
+server/        # Node.js + Express backend
+.env           # Environment variables for server
+README.md
